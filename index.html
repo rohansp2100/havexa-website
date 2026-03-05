@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HaveXa Labs — Artificial Intelligence Redefined</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Cursor (desktop) -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Mobile drawer -->
+    <div
+      class="mobile-drawer"
+      id="mobileDrawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+    >
+      <button class="mobile-close" id="drawerClose" aria-label="Close menu">
+        ✕
+      </button>
+      <a href="#home" onclick="closeDrawer()">Home</a>
+      <a href="#about" onclick="closeDrawer()">About</a>
+      <a href="#solutions" onclick="closeDrawer()">Solutions</a>
+      <a href="#innovation" onclick="closeDrawer()">Innovation</a>
+      <a href="#insights" onclick="closeDrawer()">Insights</a>
+      <a href="#contact" onclick="closeDrawer()">Contact</a>
+    </div>
+
+    <!-- ═══════════ NAV ═══════════ -->
+    <nav id="nav" role="navigation" aria-label="Main">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+          <div class="brand-hex" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <polygon
+                points="16,2 28,9 28,23 16,30 4,23 4,9"
+                stroke="#c9a84c"
+                stroke-width="1.5"
+                fill="rgba(61,26,120,0.4)"
+              />
+            </svg>
+            <span class="brand-hex-text">HX</span>
+          </div>
+          HaveXa <span class="gold">&nbsp;Labs</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#innovation">Innovation</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+        <button
+          class="hamburger"
+          id="hamBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="home" class="section">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb orb-a"></div>
+        <div class="hero-orb orb-b"></div>
+        <div class="hero-lines"></div>
+      </div>
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="hero-kicker" aria-hidden="true">
+            <div class="hero-kicker-dot"></div>
+            <span class="hero-kicker-text">AI Research &amp; Engineering</span>
+            <div class="hero-kicker-sep"></div>
+          </div>
+          <h1 class="hero-headline">
+            Engineering<br />
+            the <span class="ital">Future</span><br />
+            with AI.
+          </h1>
+          <div class="hero-bottom">
+            <p class="body-xl">
+              HaveXa Labs engineers advanced artificial intelligence systems at
+              the intersection of research and real-world impact. We build the
+              intelligent infrastructure of tomorrow — today.
+            </p>
+            <div class="hero-actions">
+              <a href="#solutions" class="btn-gold"
+                >Explore Solutions
+                <span class="btn-icon" aria-hidden="true">→</span></a
+              >
+              <a href="#contact" class="btn-ghost"
+                >Contact Us
+                <span class="btn-icon" aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <div class="scroll-ind" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span>Scroll to discover</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TICKER ═══════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-item">
+          Artificial Intelligence<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Machine Learning<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Computer Vision<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Natural Language Processing<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Neural Networks<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          AI Automation<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Data Intelligence<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Deep Learning<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">Edge AI<span class="ticker-gem">◆</span></div>
+        <div class="ticker-item">
+          Generative Models<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Artificial Intelligence<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Machine Learning<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Computer Vision<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Natural Language Processing<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Neural Networks<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          AI Automation<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Data Intelligence<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">
+          Deep Learning<span class="ticker-gem">◆</span>
+        </div>
+        <div class="ticker-item">Edge AI<span class="ticker-gem">◆</span></div>
+        <div class="ticker-item">
+          Generative Models<span class="ticker-gem">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" class="section">
+      <div class="wrap sec-inner">
+        <div class="about-grid">
+          <div class="about-left" data-reveal>
+            <div class="about-number" aria-hidden="true">01</div>
+            <div class="about-label">About HaveXa Labs</div>
+            <h2 class="about-heading">
+              We build AI that <span class="gold">matters.</span>
+            </h2>
+          </div>
+          <div class="about-right">
+            <p class="about-intro" data-reveal data-delay="2">
+              HaveXa Labs is a frontier AI research and engineering company. We
+              partner with organisations to design, develop, and deploy
+              intelligent systems that solve complex, real-world problems at
+              scale.
+            </p>
+            <div class="about-blocks">
+              <div class="about-block" data-reveal data-delay="2">
+                <div class="about-block-tag">Mission</div>
+                <div>
+                  <div class="about-block-title">
+                    Accelerate human potential through AI
+                  </div>
+                  <div class="about-block-text">
+                    We exist to make advanced AI accessible, reliable, and
+                    impactful — transforming how individuals and enterprises
+                    interact with intelligent systems.
+                  </div>
+                </div>
+              </div>
+              <div class="about-block" data-reveal data-delay="3">
+                <div class="about-block-tag">Vision</div>
+                <div>
+                  <div class="about-block-title">
+                    A world where AI augments every decision
+                  </div>
+                  <div class="about-block-text">
+                    We envision a future where intelligent systems work
+                    alongside humans transparently — not replacing judgment, but
+                    sharpening it with unprecedented precision and speed.
+                  </div>
+                </div>
+              </div>
+              <div class="about-block" data-reveal data-delay="4">
+                <div class="about-block-tag">Philosophy</div>
+                <div>
+                  <div class="about-block-title">
+                    Research-first, responsibility-always
+                  </div>
+                  <div class="about-block-text">
+                    Every model we build is grounded in rigorous science.
+                    Safety, interpretability, and ethical deployment are core
+                    design requirements — not afterthoughts.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SOLUTIONS ═══════════ -->
+    <section id="solutions" class="section">
+      <div class="wrap sec-inner">
+        <div class="sol-header">
+          <div data-reveal>
+            <div class="eyebrow">Our Solutions</div>
+            <h2 class="h-display">
+              Six pillars of <span class="gold">intelligence.</span>
+            </h2>
+          </div>
+          <p class="body-md" data-reveal data-delay="2">
+            Each capability is a building block. Combined, they form the
+            complete intelligent infrastructure your organisation needs to lead.
+          </p>
+        </div>
+        <div class="sol-grid" data-reveal="scale">
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">01</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <circle
+                  cx="22"
+                  cy="22"
+                  r="18"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.3"
+                />
+                <circle
+                  cx="22"
+                  cy="22"
+                  r="9"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                />
+                <circle cx="22" cy="22" r="2.5" fill="#c9a84c" />
+                <line
+                  x1="22"
+                  y1="4"
+                  x2="22"
+                  y2="13"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="22"
+                  y1="31"
+                  x2="22"
+                  y2="40"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="4"
+                  y1="22"
+                  x2="13"
+                  y2="22"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="31"
+                  y1="22"
+                  x2="40"
+                  y2="22"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+              </svg>
+            </div>
+            <div class="sol-card-title">Artificial Intelligence</div>
+            <div class="sol-card-text">
+              Custom AI systems built from first principles — from problem
+              framing through model architecture to production deployment and
+              ongoing optimisation.
+            </div>
+          </div>
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">02</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <rect
+                  x="6"
+                  y="6"
+                  width="13"
+                  height="13"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                  opacity="0.6"
+                />
+                <rect
+                  x="25"
+                  y="6"
+                  width="13"
+                  height="13"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <rect
+                  x="6"
+                  y="25"
+                  width="13"
+                  height="13"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <rect
+                  x="25"
+                  y="25"
+                  width="13"
+                  height="13"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                  opacity="0.6"
+                />
+                <line
+                  x1="19"
+                  y1="12.5"
+                  x2="25"
+                  y2="12.5"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <line
+                  x1="12.5"
+                  y1="19"
+                  x2="12.5"
+                  y2="25"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <line
+                  x1="31.5"
+                  y1="19"
+                  x2="31.5"
+                  y2="25"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <line
+                  x1="19"
+                  y1="31.5"
+                  x2="25"
+                  y2="31.5"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+            <div class="sol-card-title">Machine Learning Systems</div>
+            <div class="sol-card-text">
+              End-to-end ML pipelines — data engineering, feature extraction,
+              model selection, training infrastructure, and real-time serving at
+              enterprise scale.
+            </div>
+          </div>
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">03</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <circle
+                  cx="22"
+                  cy="22"
+                  r="14"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="22"
+                  cy="22"
+                  rx="6"
+                  ry="6"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.7"
+                />
+                <circle cx="22" cy="22" r="2" fill="#c9a84c" />
+                <line
+                  x1="22"
+                  y1="8"
+                  x2="22"
+                  y2="16"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.4"
+                />
+                <line
+                  x1="22"
+                  y1="28"
+                  x2="22"
+                  y2="36"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.4"
+                />
+              </svg>
+            </div>
+            <div class="sol-card-title">Computer Vision</div>
+            <div class="sol-card-text">
+              Visual intelligence at scale. Object detection, semantic
+              segmentation, video analytics, defect inspection, and real-time
+              spatial understanding.
+            </div>
+          </div>
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">04</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <rect
+                  x="5"
+                  y="11"
+                  width="34"
+                  height="6"
+                  rx="1"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                  opacity="0.8"
+                />
+                <rect
+                  x="5"
+                  y="21"
+                  width="26"
+                  height="6"
+                  rx="1"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <rect
+                  x="5"
+                  y="31"
+                  width="18"
+                  height="6"
+                  rx="1"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                  opacity="0.3"
+                />
+              </svg>
+            </div>
+            <div class="sol-card-title">Natural Language Processing</div>
+            <div class="sol-card-text">
+              Language AI that understands context, sentiment, and intent — from
+              document intelligence and chatbots to multilingual systems and
+              knowledge extraction.
+            </div>
+          </div>
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">05</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <path
+                  d="M22 7 L35 18 L35 33 L22 40 L9 33 L9 18 Z"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                  opacity="0.6"
+                />
+                <path
+                  d="M22 15 L29 21 L29 30 L22 35 L15 30 L15 21 Z"
+                  stroke="#c9a84c"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="22"
+                  cy="25"
+                  r="2.5"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div class="sol-card-title">AI Automation</div>
+            <div class="sol-card-text">
+              Adaptive process automation beyond RPA — intelligent agents that
+              plan, reason, recover from exceptions, and optimise themselves
+              over time.
+            </div>
+          </div>
+          <div class="sol-card">
+            <span class="sol-card-corner" aria-hidden="true">06</span>
+            <div class="sol-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <polyline
+                  points="4,34 12,20 20,26 28,12 36,18 42,8"
+                  stroke="#c9a84c"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <circle cx="12" cy="20" r="2" fill="#c9a84c" opacity="0.6" />
+                <circle cx="28" cy="12" r="2" fill="#c9a84c" />
+                <circle cx="42" cy="8" r="2" fill="#c9a84c" opacity="0.4" />
+              </svg>
+            </div>
+            <div class="sol-card-title">Data Intelligence</div>
+            <div class="sol-card-text">
+              From raw signals to strategic foresight — AI-powered analytics,
+              anomaly detection, predictive modelling, and executive
+              intelligence dashboards.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ INNOVATION ═══════════ -->
+    <section id="innovation" class="section">
+      <div class="inno-bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="inno-inner sec-inner">
+          <div class="inno-layout">
+            <div data-reveal>
+              <div class="eyebrow">Innovation Lab</div>
+              <h2
+                class="h-display"
+                style="margin-bottom: clamp(14px, 2vw, 22px)"
+              >
+                Research <span class="gold">at the frontier</span> of
+                possibility.
+              </h2>
+              <p class="body-md inno-body" style="margin-bottom: 28px">
+                Our research division operates at the boundary of what is known
+                and what might be. We invest in fundamental AI research
+                alongside applied product development — because the
+                breakthroughs of today become the platforms of tomorrow.
+              </p>
+              <a href="#contact" class="btn-gold"
+                >Partner with us <span class="btn-icon">→</span></a
+              >
+              <div class="inno-stat-row">
+                <div class="inno-stat" data-reveal data-delay="3">
+                  <div class="inno-stat-num">6+</div>
+                  <div class="inno-stat-label">AI systems in development</div>
+                </div>
+                <div class="inno-stat" data-reveal data-delay="4">
+                  <div class="inno-stat-num">∞</div>
+                  <div class="inno-stat-label">Possibilities ahead</div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal data-delay="2">
+              <div
+                class="terminal"
+                role="img"
+                aria-label="HaveXa terminal demo"
+              >
+                <div class="terminal-bar">
+                  <div class="t-dot t-dot-r"></div>
+                  <div class="t-dot t-dot-y"></div>
+                  <div class="t-dot t-dot-g"></div>
+                  <span class="terminal-title">havexa-core — bash</span>
+                </div>
+                <div class="terminal-body">
+                  <span class="t-comment">// HaveXa Intelligence Core v0.1</span
+                  ><br />
+                  <span class="t-prompt">$ </span
+                  ><span class="t-cmd">hx init --model foundation</span><br />
+                  <span class="t-out">✓ Model architecture loaded</span><br />
+                  <span class="t-out">✓ Training pipeline configured</span
+                  ><br />
+                  <span class="t-out">✓ Safety checks enabled</span><br /><br />
+                  <span class="t-prompt">$ </span
+                  ><span class="t-cmd">hx train --dataset enterprise-v2</span
+                  ><br />
+                  <span class="t-gold">⟳ Epoch 1/∞ loss: 0.342 acc: 91.2%</span
+                  ><br />
+                  <span class="t-gold">⟳ Epoch 2/∞ loss: 0.218 acc: 94.7%</span
+                  ><br />
+                  <span class="t-out">✓ Checkpoint saved → /models/hx-v0.1</span
+                  ><br /><br />
+                  <span class="t-prompt">$ </span
+                  ><span class="t-cmd">hx deploy --env production</span><br />
+                  <span class="t-out">✓ System online — 99.97% uptime</span
+                  ><br />
+                  <span class="t-prompt">$ </span><span class="t-blink"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eyebrow" data-reveal>Coming Soon</div>
+          <div class="coming-grid">
+            <div class="coming-card" data-reveal data-delay="1">
+              <div class="coming-chip">In Research</div>
+              <div class="coming-title">HaveXa Foundation Model</div>
+              <div class="coming-desc">
+                A proprietary large language model fine-tuned for enterprise
+                tasks, with compliance-first architecture, on-premise
+                deployment, and RAG capabilities.
+              </div>
+              <div class="coming-progress-label">
+                <span>Research Phase</span><span>62%</span>
+              </div>
+              <div class="coming-progress-bar">
+                <div class="coming-progress-fill" style="width: 62%"></div>
+              </div>
+            </div>
+            <div class="coming-card" data-reveal data-delay="2">
+              <div class="coming-chip">Alpha</div>
+              <div class="coming-title">HaveXa Vision API</div>
+              <div class="coming-desc">
+                Universal computer vision as a service — plug-and-play visual
+                intelligence with custom model training, streaming inference,
+                and edge-ready deployment.
+              </div>
+              <div class="coming-progress-label">
+                <span>Alpha Build</span><span>38%</span>
+              </div>
+              <div class="coming-progress-bar">
+                <div
+                  class="coming-progress-fill"
+                  style="width: 38%; animation-delay: 0.3s"
+                ></div>
+              </div>
+            </div>
+            <div class="coming-card" data-reveal data-delay="3">
+              <div class="coming-chip">Prototype</div>
+              <div class="coming-title">HaveXa AutoAgent</div>
+              <div class="coming-desc">
+                Autonomous AI agents that plan multi-step tasks, use tools,
+                recover from failures, and learn from outcomes — deployable into
+                any existing workflow.
+              </div>
+              <div class="coming-progress-label">
+                <span>Prototype</span><span>19%</span>
+              </div>
+              <div class="coming-progress-bar">
+                <div
+                  class="coming-progress-fill"
+                  style="width: 19%; animation-delay: 0.6s"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ INSIGHTS ═══════════ -->
+    <section id="insights" class="section">
+      <div class="wrap sec-inner">
+        <div class="insights-header">
+          <div data-reveal>
+            <div class="eyebrow">Insights</div>
+            <h2 class="h-display">
+              Intelligence <span class="gold">perspectives.</span>
+            </h2>
+          </div>
+        </div>
+        <div class="insights-grid" data-reveal="scale">
+          <div class="insight-card">
+            <div class="insight-img insight-img-lg">
+              <div class="insight-visual v-grad-1" aria-hidden="true">AI</div>
+            </div>
+            <div class="insight-body">
+              <div class="insight-cat">Perspectives</div>
+              <div class="insight-title insight-title-lg">
+                The next decade of AI: beyond narrow models toward genuine
+                reasoning
+              </div>
+              <div class="insight-excerpt">
+                As large language models mature, the field is pivoting toward
+                systems that don't just predict tokens — but reason, plan, and
+                understand causal structure in the world around them.
+              </div>
+              <div class="insight-footer">
+                <span class="insight-date">March 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="insight-card">
+            <div class="insight-img">
+              <div class="insight-visual v-grad-2" aria-hidden="true">ML</div>
+            </div>
+            <div class="insight-body">
+              <div class="insight-cat">Machine Learning</div>
+              <div class="insight-title">
+                Five ML trends reshaping enterprise operations in 2025
+              </div>
+              <div class="insight-excerpt">
+                From multimodal models to autonomous agents, the tools
+                transforming how enterprises operate have arrived faster than
+                most predicted.
+              </div>
+              <div class="insight-footer">
+                <span class="insight-date">February 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="insight-card">
+            <div class="insight-img">
+              <div class="insight-visual v-grad-3" aria-hidden="true">∞</div>
+            </div>
+            <div class="insight-body">
+              <div class="insight-cat">Industry</div>
+              <div class="insight-title">
+                How AI is transforming operations across every vertical
+              </div>
+              <div class="insight-excerpt">
+                From healthcare diagnostics to supply chain optimisation,
+                intelligent systems are compressing the gap between data and
+                decision.
+              </div>
+              <div class="insight-footer">
+                <span class="insight-date">January 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TEAM
+    ════════════════════════════════════════ -->
+    <section id="team" class="section">
+      <div class="wrap sec-inner">
+        <!-- Section header -->
+        <div class="team-header">
+          <div data-reveal>
+            <div class="eyebrow">The People</div>
+            <h2 class="h-display">
+              Minds behind <span class="gold">HaveXa.</span>
+            </h2>
+          </div>
+          <p class="body-md" data-reveal data-delay="2">
+            A small, elite team of researchers, engineers, and builders united
+            by a single belief: that the most important AI systems haven't been
+            built yet.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="team-grid">
+          <!-- ── Member 1 ── -->
+          <div class="team-card" data-reveal data-delay="1">
+            <div class="team-photo-wrap">
+              <!-- Stylised SVG portrait -->
+              <div class="team-avatar">
+                <div class="team-avatar-bg">
+                  <img src="Satiesha.jpg" alt="Image of Satiesha V Patil">
+                </div>
+              </div>
+              <span class="team-card-idx" aria-hidden="true">01</span>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Satiesha V Patil</div>
+              <div class="team-role">Co-Founder &amp; CEO</div>
+              <div class="team-divider"></div>
+              <div class="team-bio">
+                An Electronics and Communication Engineer with nearly 30 years
+                of IT experience, specializing in solution design, product
+                architecture and digital transformation. As Founder & CEO, CFO,
+                and Solution Architect, he applies emerging technologies to
+                drive operational efficiency and deliver impactful,
+                business-aligned solutions.
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Member 2 ── -->
+          <div class="team-card" data-reveal data-delay="2">
+            <div class="team-photo-wrap">
+              <div class="team-avatar">
+                <div class="team-avatar-bg">
+                  <img src="hemalatha.jpg" alt="Image of Hemalatha">
+                </div>
+              </div>
+              <span class="team-card-idx" aria-hidden="true">02</span>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Hemalatha Kabbur</div>
+              <div class="team-role">Co-Founder &amp; CFO</div>
+              <div class="team-divider"></div>
+              <div class="team-bio">
+                A social worker and activist with over 25 years of grassroots
+                experience, Hemalatha is known for her compassion, ethical
+                leadership and people-centric approach. She guides Ubivis's
+                social responsibility and impact-driven initiatives.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /team-grid -->
+      </div>
+    </section>
+    <!-- ══════════════════════════════════════ -->
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" class="section">
+      <div class="contact-bg" aria-hidden="true"></div>
+      <div class="wrap sec-inner">
+        <div class="contact-grid">
+          <div data-reveal>
+            <div class="eyebrow">Contact</div>
+            <h2 class="h-display contact-heading">
+              Let's build something <span class="gold">remarkable.</span>
+            </h2>
+            <p class="body-xl contact-lede">
+              We're selectively partnering with forward-thinking organisations
+              ready to lead with AI. Tell us what you're building.
+            </p>
+            <div class="contact-details">
+              <div class="contact-row">
+                <div class="contact-row-icon" aria-hidden="true">@</div>
+                <div>
+                  <div class="contact-row-label">Email</div>
+                  <div class="contact-row-val">havexalabs@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-row-icon" aria-hidden="true">◎</div>
+                <div>
+                  <div class="contact-row-label">Location</div>
+                  <div class="contact-row-val">
+                    Innovation District, San Francisco, CA
+                  </div>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-row-icon" aria-hidden="true">◷</div>
+                <div>
+                  <div class="contact-row-label">Response Time</div>
+                  <div class="contact-row-val">Within one business day</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name">
+              HaveXa <span class="gold">Labs</span>
+            </div>
+            <div class="footer-tagline">
+              Engineering the future with artificial intelligence. We build
+              intelligent systems that redefine what's possible.
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-head">Company</div>
+            <div class="footer-links">
+              <a href="#about">About</a><a href="#innovation">Research</a
+              ><a href="#contact">Careers</a><a href="#contact">Press</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-head">Solutions</div>
+            <div class="footer-links">
+              <a href="#solutions">AI Solutions</a
+              ><a href="#solutions">ML Systems</a
+              ><a href="#solutions">Vision AI</a><a href="#solutions">NLP</a>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="footer-bar">
+          <div class="footer-copy">
+            © 2026 HaveXa Labs. All rights reserved.
+          </div>
+          <div class="footer-badge">
+            <div class="footer-badge-dot" aria-hidden="true"></div>
+            All systems operational
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═══════════ SCRIPTS ═══════════ -->
+    <script src="script.js"></script>
+  </body>
+</html>
