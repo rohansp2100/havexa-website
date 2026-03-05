@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://havexalabs.com/sitemap.xml
+Host: https://havexalabs.com
